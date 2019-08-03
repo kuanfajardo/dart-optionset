@@ -8,6 +8,11 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
+  # Generator
+  analyzer: ^0.36.3
+  build: ^1.1.4
+  source_gen: ^0.9.4
+  code_builder: ^3.2.0
 
 dev_dependencies:
   test: ^1.6.5
