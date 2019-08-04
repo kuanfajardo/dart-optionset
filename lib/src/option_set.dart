@@ -154,8 +154,8 @@ class OptionSet<T> {
   // mask and yet be of different subtypes, the actual type must be checked
   // when testing for equality.
   @override
-  bool operator ==(other) => this.runtimeType == other.runtimeType && this
-      .rawValue == other.rawValue;
+  bool operator ==(other) =>
+      this.runtimeType == other.runtimeType && this.rawValue == other.rawValue;
 
   @override
   int get hashCode => this.runtimeType.hashCode + this.rawValue;
@@ -184,8 +184,7 @@ class OptionSet<T> {
     radixString = radixString.padLeft(numberOfOptions, '0');
 
     if (gap < 0) {
-      radixString = radixString.substring(-gap, radixString
-          .length);
+      radixString = radixString.substring(-gap, radixString.length);
     }
 
     List<String> validOptionNames = [];
@@ -199,6 +198,6 @@ class OptionSet<T> {
     }
 
     return '${this.runtimeType} ($radixString): ${validOptionNames.join(','
-    ' ')}';
+        ' ')}';
   }
 }
