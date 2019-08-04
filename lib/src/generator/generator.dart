@@ -18,8 +18,8 @@ class OptionSetGenerator extends GeneratorForAnnotation<Option_Set> {
       final String name = annotation.read('name').stringValue;
       final Map<DartObject, DartObject> compound = annotation.read('compound')
         .mapValue;
-      final bool includeNone = annotation.read('none').boolValue;
-      final bool includeAll = annotation.read('all').boolValue;
+      final bool includeNone = annotation.read('includeNone').boolValue;
+      final bool includeAll = annotation.read('includeAll').boolValue;
 
       String className = name != ''
           ? name

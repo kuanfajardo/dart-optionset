@@ -3,4 +3,4 @@ targets:
     builders:
       option_set|option_set:
         generate_for:
-          - lib/example.dart
+          - lib/generator_example.dart
