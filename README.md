@@ -38,8 +38,8 @@ ImageFormat nonAcceptedFormats = ~acceptedFormats;
   -   [Configuration](#Configuration)
 
 ## Installation
-See [https://pub.dev/packages/option-set#-installing-tab-] on how to
-install dart packages.
+See [installing](https://pub.dev/packages/option_set#-installing-tab-)
+on how to install this package.
 
 ## Creating an `OptionSet`
 
