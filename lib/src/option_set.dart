@@ -60,7 +60,7 @@
 ///
 /// This class is best used with the @option_set annotation/generator from this
 /// package. It will auto-generate a subclass of [OptionSet] with
-/// given options and all overrides. For more information, see [TODO]
+/// given options and all overrides. For more information, see package README.md
 class OptionSet<T> {
   /// The underlying mask.
   final int rawValue;

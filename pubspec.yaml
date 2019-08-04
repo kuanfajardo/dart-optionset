@@ -1,7 +1,7 @@
 name: option_set
 description: A Dart package for working with option sets (i.e. bitmasks).
 version: 0.0.1
-author: Juan Diego Fajardo
+author: Juan Diego Fajardo <jfajardo200@gmail.com>
 homepage: https://github.com/kuanfajardo/dart-optionset
 
 environment:
@@ -13,6 +13,7 @@ dependencies:
   build: ^1.1.4
   source_gen: ^0.9.4
   code_builder: ^3.2.0
+  dart_style: ^1.2.9
 
 dev_dependencies:
   test: ^1.6.5
