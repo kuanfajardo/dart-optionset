@@ -1,3 +1,5 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - Aug 4, 2019.
 
-* TODO: Describe initial release.
+#### Initial Release
+- `OptionSet` class
+- Generator for `OptionSet`

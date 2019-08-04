@@ -58,8 +58,8 @@
 /// }
 /// ```
 ///
-/// This class is best used with the @option_set annotation/generator from the
-/// `option_set` package. It will auto-generate a subclass of [OptionSet] with
+/// This class is best used with the @option_set annotation/generator from this
+/// package. It will auto-generate a subclass of [OptionSet] with
 /// given options and all overrides. For more information, see [TODO]
 class OptionSet<T> {
   /// The underlying mask.

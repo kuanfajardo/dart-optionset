@@ -1,6 +1,7 @@
 /// Annotation for auto-generation of an OptionSet.
 ///
-/// May only be used on `enum` types. See [TODO] for example usage.
+/// May only be used on `enum` types. See [https://github.com/kuanfajardo/dart-optionset/blob/master/example/lib/generator_example.dart]
+/// for example usage.
 class Option_Set {
   /// Name to use for generated option set.
   ///
