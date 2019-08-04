@@ -1,0 +1,6 @@
+targets:
+  $default:
+    builders:
+      option_set|option_set_gen:
+        generate_for:
+          - lib/example.dart

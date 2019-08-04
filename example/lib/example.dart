@@ -1,5 +1,7 @@
 import 'package:option_set/option_set.dart';
 
+part 'example.g.dart';
+
 class ImageFormat extends OptionSet<ImageFormat> {
   const ImageFormat._(rawValue) : super(rawValue);
 
@@ -18,4 +20,14 @@ class ImageFormat extends OptionSet<ImageFormat> {
   ImageFormat initWithRawValue(int rawValue) {
     return ImageFormat._(rawValue);
   }
+}
+
+@Option_Set(
+  merge: {'express': [_ShippingOptions.nextDay, _ShippingOptions.secondDay],},
+)
+enum _ShippingOptions {
+  nextDay,
+  secondDay,
+  priority,
+  standard
 }
