@@ -23,7 +23,7 @@ class ImageFormat extends OptionSet<ImageFormat> {
 }
 
 @Option_Set(
-  merge: {'express': [_ShippingOptions.nextDay, _ShippingOptions.secondDay],},
+  compound: {'express': [_ShippingOptions.nextDay, _ShippingOptions.secondDay],},
 )
 enum _ShippingOptions {
   nextDay,
