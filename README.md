@@ -7,7 +7,7 @@ A Dart package for working with option sets (i.e. bitmasks).
 @option_set
 enum _ImageFormat { png, jpeg, svg, gif }
 
-// Easy to read construction
+// Type-safe, easy-to-read construction
 ImageFormat acceptedFormats = ImageFormat.png & ImageFormat.jpeg;
 print(acceptedFormats); // ImageFormat (0011): png, jpeg
 
@@ -21,11 +21,26 @@ ImageFormat nonAcceptedFormats = ~acceptedFormats;
 // ... and more!
 ```
 
+## Table of Contents
+- [Installation](#Installation)
+- [Creation](#Creating-an-OptionSet)
+    - [Automatic](#Automatic-using-build_runner)
+    - [Manual](#Manual)
+- [Usage](#Usage)
+    - [Construction](#Construction)
+    - [Combination](#Combination)
+    - [Negation](#Negation)
+    - [Querying](#Querying)
+    - [Toggling](#Toggling)
+    - [Turn-off](#Turn-off)
+    - [Equality](#Equality)
+- [Automatic Generation](#Auto-generation-of-OptionSet)
+  -   [Configuration](#Configuration)
+
 ## Installation
 See [TODO] on how to install dart packages.
 
-## Usage
-### Creating an OptionSet
+## Creating an `OptionSet`
 
 #### Automatic using `build_runner`
 ```dart
@@ -85,7 +100,7 @@ class ImageFormat extends OptionSet<ImageFormat> { // (1)
 
 6. Override `initWithRawValue`.
 
-### Using an OptionSet
+## Usage
 
 #### **Construction**
 ```dart
@@ -204,7 +219,7 @@ cd $PROJECT_ROOT
 pub run build_runner build
 ```
 
-### `@option_set` configurations 
+### Configuration 
 If you only need a bare-bones `OptionSet`, then just use the
 `@option_set` annotation. However, if you want a more complex
 implementation, use the `@Option_Set` annotation!
