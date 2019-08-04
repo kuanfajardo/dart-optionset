@@ -1,6 +1,6 @@
 builders:
-  option_set_gen:
-    import: "package:option_set/builder.dart"
+  option_set:
+    import: "package:option_set/src/generator/builder.dart"
     builder_factories: ["optionSetBuilder"]
     build_extensions: {".dart": ["option_set.g.part"]}
     auto_apply: dependents
